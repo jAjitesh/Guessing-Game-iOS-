@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Guessing_Game" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to my guessing game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAR-Mx-dbS">
+                                <rect key="frame" x="60" y="55" width="294" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many fingers am I holding?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bf7-Do-nGS">
+                                <rect key="frame" x="79" y="107" width="257" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wzS-89-GhS">
+                                <rect key="frame" x="124" y="162" width="166" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dl4-qV-PBN">
+                                <rect key="frame" x="175" y="219" width="65" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Guess"/>
+                                <connections>
+                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CPa-TY-OvZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="icW-Hv-RYl">
+                                <rect key="frame" x="54" y="280" width="307" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wzS-89-GhS" firstAttribute="top" secondItem="bf7-Do-nGS" secondAttribute="bottom" constant="33" id="5hO-ic-8OT"/>
+                            <constraint firstItem="bf7-Do-nGS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="73R-8v-RGj"/>
+                            <constraint firstItem="wzS-89-GhS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9So-Xw-qWw"/>
+                            <constraint firstItem="icW-Hv-RYl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Td-Pf-KpJ"/>
+                            <constraint firstItem="bf7-Do-nGS" firstAttribute="top" secondItem="MAR-Mx-dbS" secondAttribute="bottom" constant="26" id="EXm-kD-6Ph"/>
+                            <constraint firstItem="dl4-qV-PBN" firstAttribute="top" secondItem="wzS-89-GhS" secondAttribute="bottom" constant="27" id="F5x-Df-HCJ"/>
+                            <constraint firstItem="icW-Hv-RYl" firstAttribute="top" secondItem="wzS-89-GhS" secondAttribute="bottom" constant="88" id="JIX-Br-xH0"/>
+                            <constraint firstItem="wzS-89-GhS" firstAttribute="top" secondItem="bf7-Do-nGS" secondAttribute="bottom" constant="33" id="JXW-6v-0Y1"/>
+                            <constraint firstItem="wzS-89-GhS" firstAttribute="top" secondItem="bf7-Do-nGS" secondAttribute="bottom" constant="33" id="LGT-bK-6Aq"/>
+                            <constraint firstItem="wzS-89-GhS" firstAttribute="top" secondItem="bf7-Do-nGS" secondAttribute="bottom" constant="34" id="UCk-rz-bcr"/>
+                            <constraint firstItem="icW-Hv-RYl" firstAttribute="top" secondItem="dl4-qV-PBN" secondAttribute="bottom" constant="31" id="YBG-Ju-23N"/>
+                            <constraint firstItem="wzS-89-GhS" firstAttribute="leading" secondItem="bf7-Do-nGS" secondAttribute="trailing" constant="-197" id="bcr-59-Epm"/>
+                            <constraint firstItem="MAR-Mx-dbS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kaY-mH-wE0"/>
+                            <constraint firstItem="MAR-Mx-dbS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="35" id="lt1-nz-bRJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="final" destination="icW-Hv-RYl" id="og6-f0-gD0"/>
+                        <outlet property="inputNo" destination="wzS-89-GhS" id="U2I-F7-SXa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.710144927536234" y="133.69565217391306"/>
+        </scene>
+    </scenes>
+</document>
